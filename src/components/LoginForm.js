@@ -15,6 +15,7 @@ class LoginForm extends Component {
             value={this.state.email}
             onChangeText={email => this.setState({ email })}
             placeholder="user@gmail.com"
+            autoCapitalize="none"
             autoCorrect={false}
             label="Email"
           />
@@ -23,8 +24,9 @@ class LoginForm extends Component {
           <Input
             value={this.state.password}
             onChangeText={password => this.setState({ password })}
-            placeholder="Password"
+            placeholder="password"
             autoCorrect={false}
+            secureTextEntry
             label="Password"
           />
         </CardSection>
